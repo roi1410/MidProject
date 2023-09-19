@@ -1,0 +1,47 @@
+
+  {
+    "Glary": [
+      {
+        "name": "entrepreneurship-program",
+        "images": [
+          "../assets/Glary/ent/1.jpg",
+          "../assets/Glary/ent/2.webp",
+          "../assets/Glary/ent/3.jpeg",
+          "../assets/Glary/ent/4.webp",
+          "../assets/Glary/ent/6.jpeg",
+          "../assets/Glary/ent/7.jpeg",
+          "../assets/Glary/ent/8.jpeg",
+          "../assets/Glary/ent/9.jpeg",
+          "../assets/Glary/ent/10.jpeg",
+          "../assets/Glary/ent/11.jpeg"
+        ]
+      },
+      {
+        "name": "Scholarships",
+        "images": [
+          "../assets/Glary/Scoler/1.jpg",
+          "../assets/Glary/Scoler/2.webp",
+          "../assets/Glary/Scoler/3.webp",
+          "../assets/Glary/Scoler/4.jpg",
+          "../assets/Glary/Scoler/6.webp",
+          "../assets/Glary/Scoler/7.webp",
+          "../assets/Glary/Scoler/8.webp",
+          "../assets/Glary/Scoler/9.webp",
+          "../assets/Glary/Scoler/10.webp"
+        ]
+      },
+      {
+        "name": "international-school",
+        "images": [
+          "../assets/Glary/inter/1.jpeg",
+          "../assets/Glary/inter/2.jpeg",
+          "../assets/Glary/inter/3.jpeg",
+          "../assets/Glary/inter/4.jpeg",
+          "../assets/Glary/inter/5.jpeg",
+          "../assets/Glary/inter/6.jpeg",
+          "../assets/Glary/inter/7.jpeg"
+        ]
+      }
+    ]
+  }
+

@@ -1,14 +1,17 @@
 import { createContext } from "react";
-
+import jsonData from "./Data.json"
 export const test_contexts = createContext("");
 
 const MainContext = ({ children }) => {
 
 
+
+
     
   return (
-    <test_contexts.Provider value="context works">
+    <test_contexts.Provider value="context works {">
       {children}
+    
     </test_contexts.Provider>
   );
 };

@@ -1,4 +1,6 @@
+import Glary from "../components/Glary"
 import Hero from "../components/Hero"
+import Marketing from "../components/Marketing"
 
   const Home =() =>{
 
@@ -6,6 +8,8 @@ import Hero from "../components/Hero"
 
         <>
         <Hero/>
+        <Marketing />
+        <Glary/>
 
         
         </>
