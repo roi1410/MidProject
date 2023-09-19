@@ -10,10 +10,13 @@ import Sidebar from "./Sidebar"
     return(
 
         <>
-        <Navbar/>
+       
+        <Navbar/> 
         <Sidebar/>
-        <Footer/>
         <Outlet/>
+        
+        <Footer/>
+        
 
         
         </>
