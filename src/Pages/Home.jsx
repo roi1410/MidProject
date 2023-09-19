@@ -1,10 +1,13 @@
+import Hero from "../components/Hero"
+
   const Home =() =>{
 
     return(
 
         <>
+        <Hero/>
 
-        <div>this is home page</div>
+        
         </>
     )
 
