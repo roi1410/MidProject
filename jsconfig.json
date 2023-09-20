@@ -1,8 +1,18 @@
+
 {
     "compilerOptions": {
       "baseUrl": ".",
       "paths": {
-        "@components/*": ["src/components/*"]
+        "@components/*": ["src/components/*"],
+        "@home/*":["src/*"],
+        "@shadcn/*":["src/shadcn/*"]
       }
     }
   }
+
+
+
+
+
+
+

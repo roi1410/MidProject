@@ -12,7 +12,7 @@ import Sidebar from "./Sidebar"
         <>
        
         <Navbar/> 
-        <Sidebar/>
+        {/* <Sidebar/> */}
         <Outlet/>
         
         <Footer/>
