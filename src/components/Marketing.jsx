@@ -1,9 +1,9 @@
 import { FaSuitcase } from "react-icons/fa";
 import { useContext } from "react";
-import { degreesContext } from "../Context";
+import { DegreesContext } from "../Context";
 
 const Marketing = ({ profession }) => {
-  const { degreesData } = useContext(degreesContext);
+  const { degreesData } = useContext(DegreesContext);
   let circles = degreesData[profession].circles;
   return (
     <div className="bg-grey-200 h-96 flex justify-center flex-col items-center">
