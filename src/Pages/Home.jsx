@@ -9,7 +9,7 @@ import Seniors from "../components/Seniors"
 
         <>
         <Hero/>
-        <Marketing />
+        {/* <Marketing /> */}
         <Glary/>
         <Seniors/>
 

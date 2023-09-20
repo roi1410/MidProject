@@ -1,47 +1,163 @@
+{
+  "Glary": [
+    {
+      "name": "entrepreneurship-program",
+      "images": [
+        "./Glary/ent/1.jpg",
+        "./Glary/ent/2.webp",
+        "./Glary/ent/3.jpeg",
+        "./Glary/ent/4.webp",
+        "./Glary/ent/6.jpeg",
+        "./Glary/ent/7.jpeg",
+        "./Glary/ent/8.jpeg",
+        "./Glary/ent/9.jpeg",
+        "./Glary/ent/10.jpeg",
+        "./Glary/ent/11.jpeg"
+      ]
+    },
+    {
+      "name": "Scholarships",
+      "images": [
+        "./Glary/Scoler/1.jpg",
+        "./Glary/Scoler/2.webp",
+        "./Glary/Scoler/3.webp",
+        "./Glary/Scoler/4.jpg",
+        "./Glary/Scoler/6.webp",
+        "./Glary/Scoler/7.webp",
+        "./Glary/Scoler/8.webp",
+        "./Glary/Scoler/9.webp",
+        "./Glary/Scoler/10.webp"
+      ]
+    },
+    {
+      "name": "international-school",
+      "images": [
+        "./Glary/inter/1.jpeg",
+        "./Glary/inter/2.jpeg",
+        "./Glary/inter/3.jpeg",
+        "./Glary/inter/4.jpeg",
+        "./Glary/inter/5.jpeg",
+        "./Glary/inter/6.jpeg",
+        "./Glary/inter/7.jpeg"
+      ]
+    }
+  ],
 
-  {
-    "Glary": [
-      {
-        "name": "entrepreneurship-program",
-        "images": [
-          "../assets/Glary/ent/1.jpg",
-          "../assets/Glary/ent/2.webp",
-          "../assets/Glary/ent/3.jpeg",
-          "../assets/Glary/ent/4.webp",
-          "../assets/Glary/ent/6.jpeg",
-          "../assets/Glary/ent/7.jpeg",
-          "../assets/Glary/ent/8.jpeg",
-          "../assets/Glary/ent/9.jpeg",
-          "../assets/Glary/ent/10.jpeg",
-          "../assets/Glary/ent/11.jpeg"
+  "degree": {
+    "business-school": {
+      "icon": [],
+      "sentence": "Business Administration | Business and Data Analytics | Business and Entrepreneurship | Business Administration with a specialization in Accounting.",
+      "circles": [
+        [
+          "Connected to the field",
+          " The curriculum is adapted to the challenges of management in the changing digital world"
+        ],
+        [
+          "Unique specialties",
+          " Finance and Entrepreneurship, Marketing and Entrepreneurship, Digital Innovation"
+        ],
+        [
+          "Honors TrackInnovative content",
+          "  visits to companies, and personal guidance from mentors from the business world"
         ]
-      },
-      {
-        "name": "Scholarships",
-        "images": [
-          "../assets/Glary/Scoler/1.jpg",
-          "../assets/Glary/Scoler/2.webp",
-          "../assets/Glary/Scoler/3.webp",
-          "../assets/Glary/Scoler/4.jpg",
-          "../assets/Glary/Scoler/6.webp",
-          "../assets/Glary/Scoler/7.webp",
-          "../assets/Glary/Scoler/8.webp",
-          "../assets/Glary/Scoler/9.webp",
-          "../assets/Glary/Scoler/10.webp"
+      ],
+
+      "color": "blue-500"
+    },
+    "computer-studies": {
+      "icon": [],
+      "sentence": "Study computer science or computer science and entrepreneurship at the University of Reichman. And acquire a theoretical education with practical knowledge",
+      "circles": [
+        [
+          "our graduate",
+          "Leading the high-tech industry in senior positions and establishing successful startups"
+        ],
+        [
+          "Innovative courses",
+          "Guided projects in the industry alongside lectures by high-tech executives"
+        ],
+        [
+          "Advanced Study Content",
+          "Practical training for managerial positions, entrepreneurship and technology development"
         ]
-      },
-      {
-        "name": "international-school",
-        "images": [
-          "../assets/Glary/inter/1.jpeg",
-          "../assets/Glary/inter/2.jpeg",
-          "../assets/Glary/inter/3.jpeg",
-          "../assets/Glary/inter/4.jpeg",
-          "../assets/Glary/inter/5.jpeg",
-          "../assets/Glary/inter/6.jpeg",
-          "../assets/Glary/inter/7.jpeg"
+      ],
+      "color": "blue-500"
+    },
+    "law-school": {
+      "icon": [],
+      "sentence": "Law and Business Administration | Law and Government | Law and Psychology. In addition to direct tracks for the second degree: MBA",
+      "circles": [
+        [
+          "Hands-on experience",
+          "In legal clinics and acquiring skills in the legal world during studies"
+        ],
+        [
+          "Learn from the greatest jurists",
+          "Among them: Prof. Aharon Barak, former President of the Supreme Court, and Prof. Amnon Rubinstein, former Minister of Education"
+        ],
+        [
+          "Up-to-date training",
+          "Up-to-date training To the challenges of the 21st century, developing relevant skills in the future world of law"
         ]
-      }
-    ]
+      ],
+      "color": "red-500"
+    },
+    "economy": {
+      "icon": [],
+      "sentence": "Economics and Entrepreneurship with a specialization in Data Science | Economics and Business Administration | Economics and Sustainability | Economics in the specialization",
+      "circles": [
+        [
+          "unique Specialties",
+          "Educational tours, practical experience in writing policy papers and in economic clinics"
+        ],
+        [
+          "Connecting to the business world",
+          "Knowledge and technological tools in fintech, blockchain and big data worlds"
+        ],
+        [
+          "Graduates of the program",
+          "ntegrate into key roles. And work as analysts, money managers, financial advisors, BI analysts"
+        ]
+      ],
+      "color": "red-500"
+    },
+    "accounting": {
+      "icon": [],
+      "sentence": "Bachelor of Economics | Bachelor of Business Administration | Bachelor of Business Administration and Economics",
+      "circles": [
+        [
+          "Graduates of the program",
+          "are the First place on the auditors' council's accreditation exams"
+        ],
+        [
+          "A unique workshop",
+          "in entrepreneurship. Cooperation with industry and leading bodies in the economy"
+        ],
+        [
+          "Connecting to the business world",
+          "Knowledge and technological tools in the blockchain and big data worlds"
+        ]
+      ],
+      "color": "gray-200"
+    },
+    "psychology": {
+      "icon": [],
+      "sentence": "Psychology | Law and Psychology | Business Administration and Psychology",
+      "circles": [
+        [
+          "Learn from the best",
+          " professors and researchers. Students take an active role in research and laboratories, under personal guidance"
+        ],
+        [
+          "Exposure to new content",
+          "Positive psychology, brain research, business psychology and internet psychology"
+        ],
+        [
+          "practical experience",
+          "during the course of the study. Specialization in Research Field: Internal Therapies, Hospitals, Business Organizations,"
+        ]
+      ],
+      "color": "red-500"
+    }
   }
-
+}

@@ -5,10 +5,10 @@ import "./css/App.css";
 import { useContext } from "react";
 import Layout from "./components/layout";
 import Home from "./Pages/Home";
-import DegreePage from "./components/DegreePage";
 import { Register } from "./Pages/Register";
 import { Payment } from "./Pages/Payment";
 import Sidebar from "./components/Sidebar";
+import DegreePage from "./Pages/DegreePage";
 
 function App() {
  

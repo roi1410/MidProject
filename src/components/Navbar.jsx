@@ -9,7 +9,7 @@ const Navbar = () => {
     { to: "/degree", label: "business school", degree: "/business-school" },
     { to: "/degree", label: "economy", degree: "/economy" },
     { to: "/degree", label: "accounting", degree: "/accounting" },
-    { to: "/degree", label: "media and marketing", degree: "/media-and-marketing" },
+    { to: "/degree", label: "psychology", degree: "/psychology" },
   ];
 
   return (
