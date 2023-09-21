@@ -1,49 +1,26 @@
 import { FaSuitcase } from "react-icons/fa";
 import { useContext } from "react";
 import { DegreesContext } from "../Context";
+import Circle from "./Circle";
 
 const Marketing = ({ profession }) => {
   const { degreesData } = useContext(DegreesContext);
-  let circles = degreesData[profession].circles;
+  let circles = degreesData[profession].marketing.circles;
+  let color = degreesData[profession].color;
   return (
-    <div className="bg-grey-200 h-96 flex justify-center flex-col items-center">
-      <span className="text-blue-400 text-l"> tracks of study:</span>
+    <div className="bg-grey-200 h-96 flex justify-center flex-col items-center mt-10 mb-20">
+      <span className="text-blue-600 text-2xl mt-6 mb-6"> tracks of study:</span>
       <span className="text-blue-400 text-l">
-        {degreesData[profession].sentence}
+        {degreesData[profession].marketing.sentence}
       </span>
-      <span className={`text-${degreesData[profession].color} text-2xl mb-12`}>so why us</span>
-      <ul className="flex flex-row justify-around">
-        <li
-          className="flex flex-col items-center justify-center text-center
-        w-64 h-64 rounded-full border-2 border-blue-500 bg-transparent mx-10"
-        >
-          <span>
-            <FaSuitcase className={`text-${degreesData[profession].color} text-2xl `}/>
-          </span>
-          <header className={`text-${degreesData[profession].color}`}>{circles[0][0]}</header>
-          <p className="fill-current">{circles[0][1]}</p>
-        </li>
-        <li
-          className="flex flex-col items-center justify-center text-center
-        w-64 h-64 rounded-full border-2 border-blue-500 bg-transparent mx-10"
-        >
-          <span>
-            <FaSuitcase className={`text-${degreesData[profession].color} text-2xl`} />
-          </span>
-          <header className={`text-${degreesData[profession].color}`}>{circles[1][0]}</header>
-          <p className="fill-current">{circles[1][1]}</p>
-        </li>
-        <li
-          className="flex flex-col items-center justify-center text-center
-        w-64 h-64 rounded-full border-2 border-blue-500 bg-transparent mx-10"
-        >
-          <span>
-            <FaSuitcase className={`text-${degreesData[profession].color} text-2xl`} />
-          </span>
-          <header className={`text-${degreesData[profession].color}`}>{circles[2][0]}</header>
-          <p className="fill-current">{circles[2][1]}</p>
-        </li>
-      </ul>
+      <span className={`text-${color} text-2xl mb-12 mt-8`}>why ravivo universty</span>
+
+      <div className="flex flex-row justify-around ">
+        {circles.map((e) => console.log(e))}
+        {circles.map((e,i) => (
+          <Circle key={i}  color={color} circle={e} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -11,7 +11,7 @@ import { Register } from "./Register"
         <>
         <Hero/>
         {/* <Marketing /> */}
-        {/* <Glary/> */}
+        <Glary/>
         <Seniors/>
 
         
