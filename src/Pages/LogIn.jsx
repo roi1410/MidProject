@@ -1,8 +1,10 @@
 import { LogIncontexst } from "../Context";
 import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 const LogIn = () => {
+  const register_nav=useNavigate()
     const {Login,SetLogin}=useContext(LogIncontexst)
     const setInput=(data)=>{
         SetLogin(data)
@@ -53,12 +55,12 @@ const LogIn = () => {
         <p className="mt-4 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
           Dont have an account?
           {/*Link  */}
-          <a
-            className="font-medium text-blue-500 transition-colors hover:text-blue-700"
-            href="#"
+          <span
+            className="font-medium text-blue-500 transition-colors hover:text-blue-700 cursor-pointer"
+            onClick={()=>{register_nav("/Register")}}
           >
             Register
-          </a>
+          </span>
         </p>
       </form>
     </div>
