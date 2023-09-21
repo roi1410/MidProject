@@ -13,7 +13,7 @@ import DegreePage from "./Pages/DegreePage";
 
 function App() {
  
-
+console.log();
   return (
     <>
       <Routes>
