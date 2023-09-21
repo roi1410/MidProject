@@ -1,0 +1,362 @@
+{
+  "Glary": [
+    {
+      "name": "entrepreneurship-program",
+      "images": [
+        "./Glary/ent/1.jpg",
+        "./Glary/ent/2.webp",
+        "./Glary/ent/3.jpeg",
+        "./Glary/ent/4.webp",
+        "./Glary/ent/6.jpeg",
+        "./Glary/ent/7.jpeg",
+        "./Glary/ent/8.jpeg",
+        "./Glary/ent/9.jpeg",
+        "./Glary/ent/10.jpeg",
+        "./Glary/ent/11.jpeg"
+      ]
+    },
+    {
+      "name": "Scholarships",
+      "images": [
+        "./Glary/Scoler/1.jpg",
+        "./Glary/Scoler/2.webp",
+        "./Glary/Scoler/3.webp",
+        "./Glary/Scoler/4.jpg",
+        "./Glary/Scoler/6.webp",
+        "./Glary/Scoler/7.webp",
+        "./Glary/Scoler/8.webp",
+        "./Glary/Scoler/9.webp",
+        "./Glary/Scoler/10.webp"
+      ]
+    },
+    {
+      "name": "international-school",
+      "images": [
+        "./Glary/inter/1.jpeg",
+        "./Glary/inter/2.jpeg",
+        "./Glary/inter/3.jpeg",
+        "./Glary/inter/4.jpeg",
+        "./Glary/inter/5.jpeg",
+        "./Glary/inter/6.jpeg",
+        "./Glary/inter/7.jpeg"
+      ]
+    }
+  ],
+
+  "degree": {
+      "business-school": {
+        "color": "orange-500",
+        "marketing": {
+          "sentence": "Business Administration | Business and Data Analytics | Business and Entrepreneurship | Business Administration with a specialization in Accounting.",
+          "circles": [
+            {
+              "slogans": [
+                "Connected to the field",
+                "The curriculum is adapted to the challenges of management in the changing digital world"
+              ],
+              "icon": []
+            },
+            {
+              "slogans": [
+                "Unique specialties",
+                "Finance and Entrepreneurship, Marketing and Entrepreneurship, Digital Innovation"
+              ],
+              "icon": []
+            },
+            {
+              "slogans": [
+                "Honors TrackInnovative content",
+                "Visits to companies, and personal guidance from mentors from the business world"
+              ],
+              "icon": []
+            }
+          ]
+        },
+        "seniors": [
+          {
+            "img": "../seniors/bus.1.webp",
+            "sentences": [
+              "alon bar david,-Product Marketing Manager-monday.com",
+              "“The innovative spirit, the open mindedness and the entrepreneurial experience in school inspire anyone who wants a lot more"
+            ]
+          },
+          {
+            "img": "../seniors/bus.2.webp",
+            "sentences": [
+              "derria schchter-creative cto-mindspace",
+              "“The curriculum offers the student a crazy variety of channels – to learn, grow, challenge and get to know yourself"
+            ]
+          },
+          {
+            "img": "../seniors/bus.3.webp",
+            "sentences": [
+              "amit levi-co leader-deloitte",
+              "In my studies, I developed critical thinking and creative thinking that gave me the ability to ask the right questions."
+            ]
+          }
+        ]
+      },
+      "computer-studies": {
+        "color": "blue-500",
+        "marketing": {
+          "sentence": "Study computer science or computer science and entrepreneurship at the University of Reichman. And acquire a theoretical education with practical knowledge",
+          "circles": [
+            {
+              "slogans": [
+                "Our graduates",
+                "Leading the high-tech industry in senior positions and establishing successful startups"
+              ],
+              "icon": []
+            },
+            {
+              "slogans": [
+                "Innovative courses",
+                "Guided projects in the industry alongside lectures by high-tech executives"
+              ],
+              "icon": []
+            },
+            {
+              "slogans": [
+                "Advanced Study Content",
+                "Practical training for managerial positions, entrepreneurship and technology development"
+              ],
+              "icon": []
+            }
+          ]
+        },
+        "seniors": [
+          {
+            "img": "../seniors/com.1.webp",
+            "sentences": [
+              "Dana Muhlgay-Co-Founder and-Product Vice President Fibo",
+              "Reichman University combines academic studies in the highest level alongside social and business connections which accompany me to this day."
+            ]
+          },
+          {
+            "img": "../seniors/com.2.webp",
+            "sentences": [
+              "Tomer dean-founder and ceo- bullsh",
+              "Throughout the degree I found myself surrounded by entrepreneurs, tech people and renowned lecturers whom gave me the tools and-helped me get where I am today."
+            ]
+          },
+          {
+            "img": "../seniors/com.3.webp",
+            "sentences": [
+              "Sharon Nakar-Strategic- Advisor Google Israel ",
+              "Extraordinary opportunities were opened-to me, for example the Zvi Meitar Emerging-Technologies Program, business advising-club, ProWoman program and student exchange"
+            ]
+          }
+        ]
+      },
+      "law-school": {
+        "color": "red-500",
+        "marketing": {
+          "sentence": "Law and Business Administration | Law and Government | Law and Psychology. In addition to direct tracks for the second degree: MBA",
+          "circles": [
+            {
+              "slogans": [
+                "Hands-on experience",
+                "In legal clinics and acquiring skills in the legal world during studies"
+              ],
+              "icon": []
+            },
+            {
+              "slogans": [
+                "Learn from the greatest jurists",
+                "Among them: Prof. Aharon Barak, former President of the Supreme Court, and Prof. Amnon Rubinstein, former Minister of Education"
+              ],
+              "icon": []
+            },
+            {
+              "slogans": [
+                "Up-to-date training",
+                "Up-to-date training To the challenges of the 21st century, developing relevant skills in the future world of law"
+              ],
+              "icon": []
+            }
+          ]
+        },
+        "seniors": [
+          {
+            "img": "../seniors/law.1.webp",
+            "sentences": [
+              "Gilat Levian-General- Counsel, iAngels",
+              "The institute provides a unique-learning experience which-combines excellent faculty-,enrichment programs,legal clinics-and various options of volunteer."
+            ]
+          },
+          {
+            "img": "../seniors/law.2.webp",
+            "sentences": [
+              "Oren Sagi ceo-cisco",
+              "Within my studies I developed-my toolbox, which includes, business,-marketing and legal knowledge. With my-friends to the degree and my-inner compass, I paved my career."
+            ]
+          },
+          {
+            "img": "../seniors/law.3.webp",
+            "sentences": [
+              "Sharon Nakar-Strategic- Advisor Google Israel ",
+              "Extraordinary opportunities were opened-to me, for example the Zvi Meitar Emerging-Technologies Program, business advising-club, ProWoman program and student exchange"
+            ]
+          }
+        ]
+      },
+      "economy": {
+        "color": "green-500",
+        "marketing": {
+          "sentence": "Economics and Entrepreneurship with a specialization in Data Science | Economics and Business Administration | Economics and Sustainability | Economics in the specialization",
+          "circles": [
+            {
+              "slogans": [
+                "unique Specialties",
+                "Educational tours, practical experience in writing policy papers and in economic clinics"
+              ],
+              "icon": []
+            },
+            {
+              "slogans": [
+                "Connecting to the business world",
+                "Knowledge and technological tools in fintech, blockchain and big data worlds"
+              ],
+              "icon": []
+            },
+            {
+              "slogans": [
+                "Graduates of the program",
+                "Integrate into key roles. And work as analysts, money managers, financial advisors, BI analysts"
+              ],
+              "icon": []
+            }
+          ]
+        },
+        "seniors": [
+          {
+            "img": "../seniors/eco.1.webp",
+            "sentences": [
+              "Sapir Yakar-Revenue Operations -Program Manager- Yotpo",
+              "My studies gave me a fruitful ground for breakthrough thinking,by learning from the leading lecturers and by gaining practical and relevant skills for the everchanging economics world."
+            ]
+          },
+          {
+            "img": "../seniors/eco.2.webp",
+            "sentences": [
+              "derria schchter-creative cto-mindspace",
+              "The institute excels in combing-theory with practice. The school of Economics and Zell Program gave me tools which help me to this day as an entrepreneur and a CEO, and have allowed me to grow faster in my career."
+            ]
+          },
+          {
+            "img": "../seniors/eco.3.webp",
+            "sentences": [
+              "amit levi-co leader-deloitte",
+              "In my studies, I developed critical thinking and creative thinking that gave me the ability to ask the right questions."
+            ]
+          }
+        ]
+      },
+      "accounting": {
+        "color": "pink-500",
+        "marketing": {
+          "sentence": "Bachelor of Economics | Bachelor of Business Administration | Bachelor of Business Administration and Economics",
+          "circles": [
+            {
+              "slogans": [
+                "Graduates of the program",
+                "are the First place on the auditors' council's accreditation exams"
+              ],
+              "icon": []
+            },
+            {
+              "slogans": [
+                "A unique workshop",
+                "in entrepreneurship. Cooperation with industry and leading bodies in the economy"
+              ],
+              "icon": []
+            },
+            {
+              "slogans": [
+                "Connecting to the business world",
+                "Knowledge and technological tools in the blockchain and big data worlds"
+              ],
+              "icon": []
+            }
+          ]
+        },
+        "seniors": [
+          {
+            "img": "../seniors/aco1.webp",
+            "sentences": [
+              "alon bar david,-Product Marketing Manager-monday.com",
+              "“The innovative spirit, the open-mindedness and the entrepreneurial experience in school inspire anyone who wants a lot more"
+            ]
+          },
+          {
+            "img": "../seniors/aco2.webp",
+            "sentences": [
+              "derria schchter-creative cto-mindspace",
+              "“The curriculum offers the student a crazy variety of channels – to learn, grow, challenge and get to know yourself"
+            ]
+          },
+          {
+            "img": "../seniors/aco3.webp",
+            "sentences": [
+              "amit levi-co leader-deloitte",
+              "In my studies, I developed critical thinking and creative thinking that gave me the ability to ask the right questions."
+            ]
+          }
+        ]
+      },
+      "psychology": {
+        "color": "purple-500",
+        "marketing": {
+          "sentence": "Psychology | Law and Psychology | Business Administration and Psychology",
+          "circles": [
+            {
+              "slogans": [
+                "Learn from the best",
+                "professors and researchers. Students take an active role in research and laboratories, under personal guidance"
+              ],
+              "icon": []
+            },
+            {
+              "slogans": [
+                "Exposure to new content",
+                "Positive psychology, brain research, business psychology and internet psychology"
+              ],
+              "icon": []
+            },
+            {
+              "slogans": [
+                "practical experience",
+                "during the course of the study. Specialization in Research Field: Internal Therapies, Hospitals, Business Organizations,"
+              ],
+              "icon": []
+            }
+          ]
+        },
+        "seniors": [
+          {
+            "img": "../seniors/psy.1.webp",
+            "sentences": [
+              "alon bar david,-Product Marketing Manager-monday.com",
+              "“The innovative spirit, the open-mindedness and the entrepreneurial experience in school inspire anyone who wants a lot more"
+            ]
+          },
+          {
+            "img": "../seniors/psy.2.webp",
+            "sentences": [
+              "derria schchter-creative cto-mindspace",
+              "“The curriculum offers the student a crazy variety of channels – to learn, grow, challenge and get to know yourself"
+            ]
+          },
+          {
+            "img": "../seniors/psy.3.webp",
+            "sentences": [
+              "amit levi-co leader-deloitte",
+              "In my studies, I developed critical thinking and creative thinking that gave me the ability to ask the right questions."
+            ]
+          }
+        ]
+      }
+    }
+    
+  }
+

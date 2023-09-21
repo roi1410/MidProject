@@ -1,0 +1,90 @@
+
+  // "seniors": {
+  //   "business-school": {
+  //     "images": [
+  //       "public/seniors/bus.1.webp",
+  //       "public/seniors/bus.2.webp",
+  //       "public/seniors/bus.3.webp"
+  //     ],
+  //     "sentences": [
+  //       [
+  //         "alon bar david,-Product Marketing Manager-monday.com",
+  //         "“The innovative spirit, the open-mindedness and the entrepreneurial experience in school inspire anyone who wants a lot more"
+  //       ],
+  //       [
+  //         "derria schchter-creative cto-mindspace",
+  //         "“The curriculum offers the student a crazy variety of channels – to learn, grow, challenge and get to know yourself"
+  //       ],
+  //       [
+  //         "amit levi-co leader-deloitte",
+  //         "In my studies, I developed critical thinking and creative thinking that gave me the ability to ask the right questions."
+  //       ]
+  //     ],
+  //     "color": ""
+  //   },
+  //   "computer-studies": {
+  //     "images": [
+  //       "public/seniors/com.1.webp",
+  //       "public/seniors/com2.webp",
+  //       "public/seniors/com3.webp"
+  //     ],
+  //     "sentences": [
+  //       ["", " ", ""],
+  //       ["", ""],
+  //       ["", ""]
+  //     ],
+  //     "color": ""
+  //   },
+  //   "law-school": {
+  //     "images": [
+  //       "public/seniors/law.1.webp",
+  //       "public/seniors/law.2.webp",
+  //       "public/seniors/law.3.webp"
+  //     ],
+  //     "sentences": [
+  //       ["", ""],
+  //       ["", ""],
+  //       ["", ""]
+  //     ],
+  //     "color": ""
+  //   },
+  //   "economy": {
+  //     "images": [
+  //       "public/seniors/eco1.webp",
+  //       "public/seniors/eco2.webp",
+  //       "public/seniors/eco 3.webp"
+  //     ],
+  //     "sentences": [
+  //       ["", ""],
+  //       ["", ""],
+  //       ["", ""]
+  //     ],
+  //     "color": ""
+  //   },
+  //   "accounting": {
+  //     "images": [
+  //       "public/seniors/aco1.webp",
+  //       "public/seniors/aco2.webp",
+  //       "public/seniors/aco3.webp"
+  //     ],
+  //     "sentences": [
+  //       ["", ""],
+  //       ["", ""],
+  //       ["", ""]
+  //     ],
+  //     "color": ""
+  //   },
+  //   "psychology": {
+  //     "images": [
+  //       "public/seniors/psy1.webp",
+  //       "public/seniors/psy2.webp",
+  //       "public/seniors/psy3.webp"
+  //     ],
+  //     "sentences": [
+  //       ["", ""],
+  //       ["", ""],
+  //       ["", ""]
+  //     ],
+  //     "color": ""
+  //   }
+  // }

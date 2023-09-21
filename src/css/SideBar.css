@@ -1,0 +1,32 @@
+/* .header,
+.footer {
+  text-align: center;
+  height: 300px;
+  background: white;
+}
+
+.container {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+  background: #fafafa;
+}
+
+.main {
+  flex: 0 0 66.6666%;
+  height: 100vh;
+}
+
+.sidebar {
+  flex: 0 0 33.3333%;
+  background: gray;
+}
+
+.sidebar__widget {
+  position: sticky;
+  top: 0;
+  background: yellow;
+  height: 250px;
+  
+  
+} */
