@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <>
         <Navbar />
-        {/* <Sidebar/> */}
+        <Sidebar/>
       <div className="flex  justify-center ">
         <Outlet />
 

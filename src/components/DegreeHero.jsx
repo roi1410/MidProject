@@ -1,31 +1,31 @@
 import photo from "../assets/HeroDegree.webp";
 import { useContext } from "react";
 import { DegreesContext } from "../Context";
+import {FaUniversity} from "react-icons/fa";
 
 export const DegreeHero = ({ profession }) => {
   const { degreesData } = useContext(DegreesContext);
-  const color= degreesData[profession].color
+  const color = degreesData[profession].color;
   return (
     <div className="relative h-[450px]">
-      <img className="h-[100%] w-[100%] z-0 " src={photo} alt="" />
-      <div className="flex justify-center center absolute bg-blue-800 h-[100%] w-[35%] right-0 top-0 rounded-l-full ">
-        <p className="self-center text-white flex flex-col">
+      <img className="z-0 h-[100%] w-[100%] " src={photo} alt="" />
+      <div className="center absolute right-0 top-0 flex h-[100%] w-[35%] justify-center rounded-l-full bg-blue-800 ">
+        <p className="flex flex-col self-center text-white">
           <span
-            className={`self self-center text-4xl font-bold mb-10 text-${color}`}
+            className={`self mb-10 self-center text-4xl font-bold text-${color}`}
           >
-            <div className="">A degree in</div> <div>{profession}</div> 
+            <div className="">A degree in</div> <div>{profession}</div>
           </span>
-          <span className="self-center text-4xl mb-10 text-bold">
+          <span className="text-bold mb-10 self-center text-4xl">
             in ravivo universty
           </span>
-          <div
-            className={`self-center text-3xl text-bold text-${color}`}
-          >
+          <div className={`text-bold self-center text-3xl text-${color}`}>
             the best university in Israel
           </div>
-          <p className="opacity-0 text-pink-500 bg-green-500"></p>
-          <p className="opacity-0 text-green-500"></p>
-          <p className="opacity-0 text-purple-500"></p>
+          <FaUniversity className="w-16 h-16 self-center mt-10 ml-6 "/>
+          <p className="bg-green-500 text-pink-500 opacity-0"></p>
+          <p className="text-green-500 opacity-0"></p>
+          <p className="text-purple-500 opacity-0"></p>
         </p>
       </div>
     </div>

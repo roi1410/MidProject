@@ -5,15 +5,17 @@ import { Sidebarcontext } from "../Context";
 const Sidebar = () => {
   const { handleSubmit, register, error } = useForm();
   const { SetSideBarForm } = useContext(Sidebarcontext);
+  const buttons=["business","computer","economy","accounting","law","media"]
 
   return (
     <>
-      <div className="sidebar__widget bg-gradient-to-r from-cyan-500 to-blue-500 z-10 fixed top-6 w-min h-fit flex-4 gap-11 border-light-300 border-8  rounded-3xl ml-10 mt-40 ">
-        <h1 className="bg-gradient-to-r from-cyan-500 to-green-500 h-16">
-          let us call back to you
+      <div className=" flex-4 border-light-300 fixed top-6 z-10 ml-6  mt-12 h-full w-min gap-11 rounded-3xl  border-8 bg-gray-200 ">
+        <h1 className="bold ml-3 text-2xl text-indigo-700">
+          want to hear more
         </h1>
+
         <form
-          className="p-5 flex flex-col gap-5"
+          className="flex flex-col gap-5 p-5 text-blue-400"
           onSubmit={handleSubmit((data) => SetSideBarForm(data))}
         >
           <label>
@@ -32,12 +34,21 @@ const Sidebar = () => {
             background
             <input type="text" {...register("Background")} />
           </label>
-          <button className="bg-white border border-gray-300 rounded-md text-gray-700 font-semibold py-3  text-center hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" type="submit">submit</button>
+          <div className="grid grid-rows-3 grid-cols-2 gap-2 ">
+            {buttons.map((e)=>(<button className="text-xs bg-slate-500 rounded-3xl">{e}</button>))}
+          </div>
+
+
+          <button
+            className="text-gary-200 rounded-xl border border-gray-300  bg-blue-300 py-3 text-center  font-semibold hover:bg-blue-700  hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
+            type="submit"
+          >
+            talk to me
+          </button>
         </form>
       </div>
     </>
   );
-  
 };
 
 export default Sidebar;

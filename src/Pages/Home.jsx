@@ -1,27 +1,25 @@
+import Glary from "../components/Glary";
+import Hero from "../components/Hero";
+import Marketing from "../components/Marketing";
+import Seniors from "../components/Seniors";
+import { Register } from "./Register";
+import Sidebar from "../components/Sidebar"; // Import the Sidebar component
 
-import MyCalendar from "../components/MyCalendar"
-import Glary from "../components/Glary"
-import Hero from "../components/Hero"
-import Marketing from "../components/Marketing"
-import Seniors from "../components/Seniors"
-import { Register } from "./Register"
+const Home = () => {
+  return (
+    <div className="flex">
+      {/* Sidebar */}
+      <Sidebar  />
 
-  const Home =() =>{
+      {/* Main content */}
+      <div className="flex-1">
+        <Hero />
+        <Marketing profession={"home"} />
+        <Glary />
+        <Seniors />
+      </div>
+    </div>
+  );
+};
 
-    return(
-
-        <>
-        <Hero/>
-        {/* <Marketing /> */}
-        {/* <Glary/> */}
-        <Seniors/>
-      
-   
-
-        
-        </>
-    )
-
-  }
-
-  export default Home
+export default Home;
