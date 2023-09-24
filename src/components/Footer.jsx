@@ -2,6 +2,10 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  function clearLocalstorege(string) {
+    localStorage.clear(string)
+    
+  }
   return (
     <>
       <footer className="footer-section bg-gray-900 text-white py-10">
@@ -100,6 +104,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <button onClick={()=>{clearLocalstorege("Users")}}>clear Localstorge</button>
       </footer>
     </>
   );

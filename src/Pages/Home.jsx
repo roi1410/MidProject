@@ -1,3 +1,5 @@
+
+import MyCalendar from "../components/MyCalendar"
 import Glary from "../components/Glary"
 import Hero from "../components/Hero"
 import Marketing from "../components/Marketing"
@@ -11,8 +13,10 @@ import { Register } from "./Register"
         <>
         <Hero/>
         {/* <Marketing /> */}
-        <Glary/>
+        {/* <Glary/> */}
         <Seniors/>
+      
+   
 
         
         </>

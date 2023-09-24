@@ -34,7 +34,7 @@ export const Register = () => {
   };
 
   return (
-    <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
+    <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none bg-cyan-50">
       <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
         Sign Up
       </h4>
@@ -84,6 +84,7 @@ export const Register = () => {
             {degreeOption.map((degree, index) => {
               return (
                 <button
+                type="button"
                   onClick={() => handleDegreeClick(degree)}
                   className="py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 h-fit"
                   key={index}
@@ -97,7 +98,7 @@ export const Register = () => {
         </div>
 
         <button
-          className="mt-6 block w-full select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          className="mt-6 block w-full select-none rounded-lg bg-cyan-950 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
           type="submit"
           data-ripple-light="true"
         >
@@ -115,5 +116,13 @@ export const Register = () => {
         </p>
       </form>
     </div>
+    
+
+
+
+
+
+
+
   );
 };
