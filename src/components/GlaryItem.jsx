@@ -18,7 +18,7 @@ const GlaryItem = ({ arr }) => {
       {arr.map((image, i) => (
         <img
           key={i}
-          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
+          className={`absolute left-0 top-0 h-full w-full transition-opacity duration-1000 ease-in-out ${
             i === index ? "opacity-100" : "opacity-0"
           }`}
           src={image}

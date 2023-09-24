@@ -4,13 +4,12 @@ const Seniors = () => {
 
   return (
     <>
-     
       <section className="c-block--remove-top-padding c-block b-quote b-quote__icon-crimson bg-gray-100">
         <div className="b-quote__container l-container">
           <div className="b-quote__content">
-            <blockquote className="c-quote p-8 bg-white shadow-md rounded-lg">
+            <blockquote className="c-quote rounded-lg bg-white p-8 shadow-md">
               <div className="c-block__quote-content an-will-animate an-was-on-viewport an-on-viewport an-on-viewport-mid an-on-viewport-full">
-                <div className="c-quote__text text-3xl font-semibold mb-4">
+                <div className="c-quote__text mb-4 text-3xl font-semibold">
                   No one is less because they go to a food pantry. No one
                   deserves to be hungry.
                 </div>
