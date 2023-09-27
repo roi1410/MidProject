@@ -29,7 +29,7 @@ const Seniors = ({ data }) => {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="md:w-[45%] w-full ml-5 mr-5 mt-5 md:mt-20"
+          className="md:w-[45%] w-full ml-1 mr-5 mt-5 md:mt-20"
         >
           <div className="h-10 w-10">
             <BiSolidQuoteAltLeft className="h-full w-full text-red-900" />
