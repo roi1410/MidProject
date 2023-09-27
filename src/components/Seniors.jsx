@@ -1,54 +1,67 @@
-import { useParams } from "react-router-dom";
-const Seniors = () => {
-  const { degree } = useParams();
+import { useEffect, useRef, useState } from "react";
+import { BiSolidQuoteAltLeft } from "react-icons/bi";
+import { animate, motion } from "framer-motion";
+
+const Seniors = ({ data }) => {
+  const textVariants = {
+    initial: { y: 100, opacity: 0 },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: { delay: 0.5, duration: 0.9 }
+    }
+  };
+
+  const imgVariants = {
+    initial: { x: 100, opacity: 0 },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: { delay: 0.5, duration: 0.5 }
+    }
+  };
 
   return (
     <>
-      <section className="c-block--remove-top-padding c-block b-quote b-quote__icon-crimson bg-gray-100">
-        <div className="b-quote__container l-container">
-          <div className="b-quote__content">
-            <blockquote className="c-quote rounded-lg bg-white p-8 shadow-md">
-              <div className="c-block__quote-content an-will-animate an-was-on-viewport an-on-viewport an-on-viewport-mid an-on-viewport-full">
-                <div className="c-quote__text mb-4 text-3xl font-semibold">
-                  No one is less because they go to a food pantry. No one
-                  deserves to be hungry.
-                </div>
-
-                <div className="c-quote__cite-text">
-                  <div className="c-quote__cite-name text-base font-semibold">
-                    Leah Gose, Graduate School of Arts and Sciences alum
-                  </div>
-                  <div className="c-quote__cite-title">
-                    Leah is shedding light on how we can work together to
-                    provide nutritional assistance, address barriers to access,
-                    and create policies that eliminate food insecurity.
-                  </div>
-                  <div className="c-quote__quote-cta mt-4">
-                    <a
-                      href="https://gsas.harvard.edu/news/hungry-change"
-                      className="a-btn a-btn-secondary a-btn--arrow-right"
-                    >
-                      <span className="a-btn__text">
-                        Read more about Leah’s work
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <cite className="c-quote__cite an-will-animate an-was-on-viewport an-on-viewport an-on-viewport-mid an-on-viewport-full">
-                <span className="c-quote__cite-figure c-image">
-                  <img
-                    src="https://www.harvard.edu/wp-content/uploads/2023/08/LeahGose-copy-624x624.jpg"
-                    alt="A woman stands outside, resting her arm on a brick wall"
-                    className="c-quote__cite-image c-image__image"
-                  />
-                </span>
-              </cite>
-            </blockquote>
+      <section className="flex flex-col-reverse md:flex-row w-full bg-gray-100">
+        <motion.div
+          variants={textVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className="md:w-[45%] w-full ml-5 mr-5 mt-5 md:mt-20"
+        >
+          <div className="h-10 w-10">
+            <BiSolidQuoteAltLeft className="h-full w-full text-red-900" />
           </div>
-        </div>
+          <div className="mb-4 text-2xl md:text-4xl lg:text-5xl">
+            {data.quotes[0]}
+          </div>
+          <div className="text-lg md:text-xl font-bold">{data.quotes[1]}</div>
+          <div className="text-lg md:text-xl">{data.quotes[2]}</div>
+        </motion.div>
+
+        <motion.div
+          variants={imgVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className="md:w-[45%] w-full sm:ml-24"
+        >
+          <img className="w-full h-auto" src={data.img} alt="" />
+        </motion.div>
       </section>
+
+      <style jsx>{`
+        /* Adjust the layout for screens smaller than md (e.g., 768px) */
+        @media (max-width: 768px) {
+          .flex-col-reverse.md\\:flex-row {
+            flex-direction: column-reverse;
+          }
+          
+          /* You can add more responsive styles here */
+        }
+      `}</style>
     </>
   );
 };

@@ -8,15 +8,15 @@ export const OurSeniors = ({ profession }) => {
   const seniors = degreesData[profession].seniors;
   const color = degreesData[profession].color;
   return (
-    <div className=" h-110 flex flex-col  items-center bg-gray-200">
+    <div className="h-auto flex flex-col items-center bg-gray-200">
       <span className={`mb-8 text-4xl font-bold text-${color}`}>
         our graduates
       </span>
 
-      <div className="w-300 flex flex-row justify-around ">
+      <div className="flex flex-wrap justify-around w-full">
         {seniors.map((e, index) => (
           <Senior
-            className="w-80 "
+            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4"
             key={index}
             img={e.img}
             sentences={e.sentences}

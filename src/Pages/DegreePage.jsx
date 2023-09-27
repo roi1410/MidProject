@@ -7,10 +7,10 @@ import OurSeniors from "../components/OurSeniors";
 const DegreePage = () => {
   const routeParams = useParams();
   return (
-    <div className="flex flex-col">
-      <DegreeHero className={``} profession={routeParams.degree} />
-      <Marketing className={``} profession={routeParams.degree} />
-      <OurSeniors className={``} profession={routeParams.degree} />
+    <div className="flex flex-col ">
+      <DegreeHero  profession={routeParams.degree} />
+      <Marketing  profession={routeParams.degree} />
+      <OurSeniors  profession={routeParams.degree} />
     </div>
   );
 };

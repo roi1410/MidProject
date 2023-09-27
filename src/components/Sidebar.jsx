@@ -9,7 +9,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className=" flex-4 border-light-300 fixed top-6 z-10 ml-6  mt-12 h-full w-min gap-11 rounded-3xl  border-8 bg-gray-200 ">
+      <div className=" flex-4 border-light-300 fixed top-6 z-10  mt-12 h-full w-min gap-11 rounded-3xl  border-8 bg-gray-200 ">
         <h1 className="bold ml-3 text-2xl text-indigo-700">
           want to hear more
         </h1>
