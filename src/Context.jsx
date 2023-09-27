@@ -3,6 +3,7 @@ import jsonData from "./Data.json";
 // ech packeg is designated  to a differnet component
 export const Sidebarcontext = createContext({ SetSideBarForm: () => {} });
 export const Glarycontext = createContext({ GlaryData: [] });
+export const GraduateContext = createContext({ GraduateData: [] });
 export const LogIncontexst = createContext({ Login: {}, SetLogin: () => {} });
 export const DegreesContext = createContext({ degreesData: {} });
 export const Registercontext = createContext({
@@ -13,11 +14,11 @@ export const SingUp_degreeContext = createContext({ CerentUser: {} });
 export const DegreeSingUpContext = createContext({ CerentUser: {} });
 
 const MainContext = ({ children }) => {
-  // sidebar contect us form
-  // need to fix data is sent in a dilay
+
   const [SidebarForm, SetSideBarForm] = useState();
   const GlaryData = jsonData.Glary;
   const degreesData = jsonData.degree;
+  const GraduateData = jsonData.Graduate;
   const [degreeOption, SetdegreeOption] = useState(Object.keys(degreesData));
   const [CerentUser, SetCerentUser] = useState();
 
@@ -54,6 +55,7 @@ const MainContext = ({ children }) => {
   // DB
 
   return (
+    <GraduateContext.Provider value={{GraduateData}}>
     <DegreeSingUpContext.Provider value={{CerentUser}}>
       <SingUp_degreeContext.Provider value={{ CerentUser }}>
         <Registercontext.Provider value={{ degreeOption, SetdegreeOption }}>
@@ -69,6 +71,7 @@ const MainContext = ({ children }) => {
         </Registercontext.Provider>
       </SingUp_degreeContext.Provider>
     </DegreeSingUpContext.Provider>
+    </GraduateContext.Provider>
   );
 };
 

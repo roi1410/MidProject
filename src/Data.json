@@ -179,7 +179,7 @@
         }
       ]
     },
-    
+
     "law-school": {
       "color": "red-500",
       "marketing": {
@@ -391,5 +391,24 @@
         }
       ]
     }
-  }
+  },
+
+  "Graduate": [
+    {
+      "img": "./public/graduate/grd.webp",
+      "quotes": [
+        " No one is less because they go to a food pantry. No one deserve to be hungry.”",
+        "Leah Gose, Graduate School of Arts and Sciences alum",
+        " Leah is shedding light on how we can work together to provide nutritional assistance, address barriers to access, and create policies that eliminate food insecurity."
+      ]
+    },
+    {
+      "img": "./public/graduate/grd.2.webp",
+      "quotes": [
+        "We are able to provide care to a patient population in need.”",
+        "Betty Ben Dor, Harvard School of Dental Medicine student",
+        "Betty and many other Dental School students volunteer and learn at ACTION, a student-run pediatric dental clinic at Harvard, which provides care to pediatric patients at the Cambridge Health Alliance in Cambridge and the Greater Boston area."
+      ]
+    }
+  ]
 }

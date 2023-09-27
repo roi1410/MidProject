@@ -1,7 +1,9 @@
-import React from 'react';
-import * as FaIcons from 'react-icons/fa';
+import React from "react";
+import * as FaIcons from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Circle = ({ color, circle }) => {
+  // Create an object to map icon names to their respective components
   const iconMap = {
     FaBook: FaIcons.FaBook,
     FaUsers: FaIcons.FaUsers,
@@ -22,20 +24,40 @@ const Circle = ({ color, circle }) => {
     FaTools: FaIcons.FaTools,
     FaUserTie: FaIcons.FaUserTie,
     FaBrain: FaIcons.FaBrain,
-    FaHandsHelping: FaIcons.FaHandsHelping
+    FaHandsHelping: FaIcons.FaHandsHelping,
   };
 
-  const Icon = iconMap[circle.icon]; 
+  const IconComponent = iconMap[circle.icon];
+  const fontSize = circle.slogans[0].length > 15 ? "text-sm" : "text-lg";
+  const headerFontSize = circle.slogans[0].length > 15 ? "text-xs" : "text-base";
+
+  const circleVariants = {
+    initial: { y: -10, opacity: 0 },
+    animate: {
+      opacity: 1,
+      y: 0,
+
+      transition: { delay:1, duration: 2 },
+    },
+  };
+
   return (
-    <div
-      className={`mx-10 flex h-64 w-64 flex-col items-center justify-center rounded-full border-2 border-blue-500 bg-transparent text-center`}
-    >
+     <motion.div
+      variants={circleVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+      className={`mx-5 flex flex-col items-center justify-center rounded-full border-2 border-blue-500 bg-transparent text-center sm:mx-10  sm:h-64 sm:w-64 ${
+        circle.slogans[0].length > 15 ? "mt-2" : "mt-4"
+      }`}     >
       <span>
-        <Icon className={`text-${color} text-2xl`} />
+        <IconComponent className={`text-${color} sm:text-2xl`} />
       </span>
-      <header className={`text-${color}`}>{circle.slogans[0]}</header>
-      <p className="fill-current">{circle.slogans[1]}</p>
-    </div>
+      <div className="mt-2 sm:ml-2 ">
+        <header className={`text-${color} text-lg sm:text-base`}>{circle.slogans[0]}</header>
+        <span className="mt-2 text-sm sm:text-base ">{circle.slogans[1]}</span>
+      </div>
+    </motion.div>
   );
 };
 
