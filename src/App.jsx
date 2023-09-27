@@ -11,6 +11,7 @@ import Sidebar from "./components/Sidebar";
 import  LogIn  from "./Pages/LogIn";
 import DegreePage from "./Pages/DegreePage";
 import Payment from "./Pages/Payment";
+import AboutUs from "./Pages/About";
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/About" element={<AboutUs/>}></Route>
           <Route path="/degree/:degree" element={<DegreePage />} />
           <Route path="/Register" element={<Register />} />
           {/* change the path to Semester_sing_in */}

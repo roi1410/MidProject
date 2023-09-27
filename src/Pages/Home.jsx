@@ -8,8 +8,8 @@ import Sidebar from "../components/Sidebar"; // Import the Sidebar component
 const Home = () => {
   return (
     <div className="flex">
-      {/* Sidebar */}
-      <Sidebar  />
+   
+  
 
       {/* Main content */}
       <div className="flex-1">

@@ -6,13 +6,7 @@ function AboutUs() {
       <div className="container mx-auto">
         <h2 className="text-3xl font-semibold text-gray-800 mb-6">About Our University</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div className="mb-4">
-            <img
-              src="university-image.jpg"
-              alt="University Building"
-              className="rounded-lg shadow-lg"
-            />
-          </div>
+        
           <div>
             <p className="text-gray-600">
               Welcome to Our University, a place of academic excellence and

@@ -7,8 +7,8 @@ export const DegreeHero = ({ profession }) => {
   const { degreesData } = useContext(DegreesContext);
   const color = degreesData[profession].color;
   return (
-    <div className="relative h-[450px]">
-      <img className="z-0 h-[100%] w-[100%] " src={photo} alt="" />
+    <div className="relative h-96 w-full ">
+      <img className="z-0 h-full w-full " src={photo} alt="" />
       <div className="center absolute right-0 top-0 flex h-[100%] w-[35%] justify-center rounded-l-full bg-blue-800 ">
         <p className="flex flex-col self-center text-white">
           <span

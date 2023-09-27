@@ -26,6 +26,7 @@ const MainContext = ({ children }) => {
       ? JSON.parse(localStorage.getItem("SideBar"))
       : []
   );
+  console.log(sideBarArray);
  
   useEffect(() => {
     SidebarForm && SetsideBarArray([...sideBarArray, SidebarForm]);

@@ -9,8 +9,10 @@ const DegreePage = () => {
   return (
     <div className="flex flex-col">
       <DegreeHero className={``} profession={routeParams.degree} />
+      <div className="grid grid-cols-2">
       <Marketing className={``} profession={routeParams.degree} />
       <OurSeniors className={``} profession={routeParams.degree} />
+      </div>
     </div>
   );
 };

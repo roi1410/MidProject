@@ -13,7 +13,7 @@ export const OurSeniors = ({ profession }) => {
         our graduates
       </span>
 
-      <div className="w-300 flex flex-row justify-around ">
+      <div className="w-fit flex flex-row  justify-aroun md:flex-col ">
         {seniors.map((e, index) => (
           <Senior
             className="w-80 "

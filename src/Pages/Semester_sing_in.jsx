@@ -17,18 +17,24 @@ export const Semester_sing_in = () => {
     );
   } else {
     const Users_Degree = CerentUser.Degree;
-    const test = () => {
-      console.log( CerentUser);
-    };
- 
+  
+
     return (
       <>
-      <button onClick={() => test()}>test btn</button>
-      
-        <h1>choose the summester you want in </h1>
-        <NavLink to={"/PayMent_rell"}>payment</NavLink>
-
-        <MyCalendar Users_Degree={Users_Degree} />
+        <div className="flex flex-col">
+          <div className=" bg-blue-500">
+            <NavLink
+              className={
+                "text-lg font-bold text-white transition-colors duration-300 hover:text-blue-900"
+              }
+              to={"/PayMent_rell"}
+            >
+              payment
+            </NavLink>
+          </div>
+          when the sumester of the dgree takes palce 
+          <MyCalendar Users_Degree={Users_Degree} />
+        </div>
       </>
     );
   }
