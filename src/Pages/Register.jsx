@@ -18,6 +18,7 @@ export const Register = () => {
   const [RegisterUser, SetRegister] = useState();
   const [AllUsers, SetAllUsers] = useState(UserLocalStorege?UserLocalStorege:[]);
   
+  
 
 
   const { degreeOption, SetdegreeOption } = useContext(Registercontext);
@@ -83,7 +84,7 @@ export const Register = () => {
  
 
   return (
-    <div className="relative flex flex-col rounded-xl bg-cyan-50 bg-transparent bg-clip-border text-gray-700 shadow-none md:hidden">
+    <div className="relative flex flex-col rounded-xl bg-cyan-50 bg-transparent bg-clip-border text-gray-700 shadow-none items-center ">
       <h4 className="text-blue-gray-900 block font-sans text-2xl font-semibold leading-snug tracking-normal antialiased">
         Sign Up
       </h4>

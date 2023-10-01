@@ -46,6 +46,7 @@
   "degree": {
     "home": {
       "color": "orange-500",
+
       "marketing": {
         "sentence": "Entrepreneurship and Leadership Development Programs, Academic Research and Development, Clubs and Social Activities, Outstanding Programs",
         "circles": [
@@ -410,5 +411,44 @@
         "Betty and many other Dental School students volunteer and learn at ACTION, a student-run pediatric dental clinic at Harvard, which provides care to pediatric patients at the Cambridge Health Alliance in Cambridge and the Greater Boston area."
       ]
     }
-  ]
+  ],
+
+  "date_degree": {
+    "business-school": {
+      "start": "2023-09-27T21:00:00.000Z",
+      "end": "2023-10-05T21:00:00.000Z",
+      "title": "business-school",
+      "color": "blue"
+    },
+    "economy": {
+      "start": "2023-10-27T21:00:00.000Z",
+      "end": "2023-12-05T21:00:00.000Z",
+      "title": "economy",
+      "color": "green"
+    },
+    "computer-studies": {
+      "start": "2024-01-27T21:00:00.000Z",
+      "end": "2024-02-05T21:00:00.000Z",
+      "title": "computer-studies",
+      "color": "red"
+    },
+    "law-school": {
+      "start": "2024-03-27T21:00:00.000Z",
+      "end": "2024-04-05T21:00:00.000Z",
+      "title": "law-school",
+      "color": "purple"
+    },
+    "accounting": {
+      "start": "2024-04-27T21:00:00.000Z",
+      "end": "2024-08-05T21:00:00.000Z",
+      "title": "accounting",
+      "color": "orange"
+    },
+    "psychology": {
+      "start": "2024-01-27T21:00:00.000Z",
+      "end": "2024-10-05T21:00:00.000Z",
+      "title": "psychology",
+      "color": "teal"
+    }
+  }
 }

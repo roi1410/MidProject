@@ -20,7 +20,8 @@ const LogIn = () => {
     }
   });
   return (
-    <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
+    <div className="relative rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none flex justify-center flex-col items-center  ">
+      
       <h4 className="text-blue-gray-900 block font-sans text-2xl font-semibold leading-snug tracking-normal antialiased">
         LogIn
       </h4>

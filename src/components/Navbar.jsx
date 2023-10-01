@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const routes = [
     { to: "/", label: <AiOutlineHome className="h-8 w-8" />, degree: "" },
-    { to: "/register", label: "Register", degree: "" },
+    { to: "/Register", label: "Register", degree: "" },
     { to: "/LogIn", label: "Login", degree: "" },
     { to: "/Payment", label: "Enroll next semester", degree: "" },
   ];

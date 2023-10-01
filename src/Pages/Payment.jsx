@@ -18,16 +18,16 @@ export default function Payment() {
   } else {
     const [Users_Degree, setUser_Degree] = useState(CerentUser.Degree);
 
-    const { handleSubmit, register, formState:{errors}} = useForm({
-      defaultValues:{Card_Name:"",
-      Card_Number:"",
-
-
-      }
+    const {
+      handleSubmit,
+      register,
+      formState: { errors },
+    } = useForm({
+      defaultValues: { Card_Name: "", Card_Number: "" },
     });
 
     function removedegree(degree) {
-      setUser_Degree(Users_Degree.filter((element) => element === degree));
+      setUser_Degree(Users_Degree.filter((element) => element !== degree));
     }
     const price = () => {
       return Users_Degree.length * 1000 + "$";
@@ -35,31 +35,30 @@ export default function Payment() {
     function validateCreditCardExpiration(expirationDate) {
       // Ensure the expirationDate is a valid date object
       const parsedExpirationDate = new Date(expirationDate);
-    
+
       if (isNaN(parsedExpirationDate)) {
         return false; // Invalid date format
       }
-  
+
       const currentDate = new Date();
-    
-    
+
       if (parsedExpirationDate < currentDate) {
-        return false; 
+        return false;
       }
-    
-      return true; 
+
+      return true;
     }
     function validateCreditCardCVC(cvc) {
       // Check if the CVC is a numeric string
       if (!/^\d+$/.test(cvc)) {
         return false; // CVC contains non-numeric characters
       }
-    
+
       // Check if the CVC is either 3 or 4 digits (common for most cards)
       if (cvc.length !== 3 && cvc.length !== 4) {
         return false; // Invalid CVC length
       }
-    
+
       return true; // CVC is valid
     }
 
@@ -97,7 +96,6 @@ export default function Payment() {
                   <div className="rounded-b bg-white px-8 pb-6 shadow-lg">
                     {/* Card header */}
                     <div className="mb-6 text-center">
-                      
                       <h1 className="mb-2 text-xl font-semibold leading-snug text-gray-800">
                         Enter your Credit Card
                       </h1>{" "}
@@ -125,32 +123,41 @@ export default function Payment() {
                         <div className="space-y-4">
                           {/* Card Number */}
                           <div>
-                          {errors.Card_Number?.message&&
-                              <span className="text-red-500">{errors.Card_Number.message}</span>}
+                            {errors.Card_Number?.message && (
+                              <span className="text-red-500">
+                                {errors.Card_Number.message}
+                              </span>
+                            )}
                             <label
                               className="mb-1 block text-sm font-medium"
                               htmlFor="card-nr"
                             >
                               Card Number{" "}
-                            
                             </label>
                             <input
-                              {...register("Card_Number",{required:"card number is required",validate:{
-                                valid:(v)=>v.length===16||"the credit card number is not valid"
-                              }})}
+                              {...register("Card_Number", {
+                                required: "card number is required",
+                                validate: {
+                                  valid: (v) =>
+                                    v.length === 16 ||
+                                    "the credit card number is not valid",
+                                },
+                              })}
                               id="card-nr"
                               className="w-full rounded border border-gray-200 bg-white px-3 py-2 text-sm leading-5 text-gray-800 placeholder-gray-400 shadow-sm hover:border-gray-300 focus:border-indigo-300 focus:ring-0"
                               type="text"
                               maxLength={16}
-                              
                               placeholder="1234 1234 1234 1234"
                             />
                           </div>
                           {/* Expiry and CVC */}
                           <div className="flex space-x-4">
                             <div className="flex-1">
-                              {errors.Expiry_Date?.message&&
-                              <span className="text-red-500">{errors.Expiry_Date.message}</span>}
+                              {errors.Expiry_Date?.message && (
+                                <span className="text-red-500">
+                                  {errors.Expiry_Date.message}
+                                </span>
+                              )}
                               <label
                                 className="mb-1 block text-sm font-medium"
                                 htmlFor="card-expiry"
@@ -158,9 +165,14 @@ export default function Payment() {
                                 Expiry Date{" "}
                               </label>
                               <input
-                                {...register("Expiry_Date",{required:"ExpiryDate is required",validate:{
-                                  isexpirad:(v)=>validateCreditCardExpiration(v)||"the date is expiriad"
-                                }})}
+                                {...register("Expiry_Date", {
+                                  required: "ExpiryDate is required",
+                                  validate: {
+                                    isexpirad: (v) =>
+                                      validateCreditCardExpiration(v) ||
+                                      "the date is expiriad",
+                                  },
+                                })}
                                 id="card-expiry"
                                 className="w-full rounded border border-gray-200 bg-white px-3 py-2 text-sm leading-5 text-gray-800 placeholder-gray-400 shadow-sm hover:border-gray-300 focus:border-indigo-300 focus:ring-0"
                                 type="date"
@@ -168,18 +180,26 @@ export default function Payment() {
                               />
                             </div>
                             <div className="flex-1">
-                              {errors.CVC?.message&&
-                              <span className="text-red-500">{errors.CVC.message}</span>}
+                              {errors.CVC?.message && (
+                                <span className="text-red-500">
+                                  {errors.CVC.message}
+                                </span>
+                              )}
                               <label
                                 className="mb-1 block text-sm font-medium"
                                 htmlFor="card-cvc"
                               >
-                                CVC 
+                                CVC
                               </label>
                               <input
-                                {...register("CVC",{required:"CvC is required",validate:{
-                                  numric:(v)=>validateCreditCardCVC(v)|| "CVC isnt valid"
-                                }})}
+                                {...register("CVC", {
+                                  required: "CvC is required",
+                                  validate: {
+                                    numric: (v) =>
+                                      validateCreditCardCVC(v) ||
+                                      "CVC isnt valid",
+                                  },
+                                })}
                                 id="card-cvc"
                                 className="w-full rounded border border-gray-200 bg-white px-3 py-2 text-sm leading-5 text-gray-800 placeholder-gray-400 shadow-sm hover:border-gray-300 focus:border-indigo-300 focus:ring-0"
                                 type="text"
@@ -190,20 +210,23 @@ export default function Payment() {
                           </div>
                           {/* Name on Card */}
                           <div>
-                          {errors.Card_Name?.message&&
-                              <span className="text-red-500">{errors.Card_Name.message}</span>}
+                            {errors.Card_Name?.message && (
+                              <span className="text-red-500">
+                                {errors.Card_Name.message}
+                              </span>
+                            )}
 
                             <label
                               className="mb-1 block text-sm font-medium"
                               htmlFor="card-name"
                             >
                               Name on Card{" "}
-                              <span className="text-red-500">*</span>
                             </label>
                             <input
                               id="card-name"
-
-                              {...register("Card_Name",{required:"card name is required"})}
+                              {...register("Card_Name", {
+                                required: "card name is required",
+                              })}
                               className="w-full rounded border border-gray-200 bg-white px-3 py-2 text-sm leading-5 text-gray-800 placeholder-gray-400 shadow-sm hover:border-gray-300 focus:border-indigo-300 focus:ring-0"
                               type="text"
                               placeholder="Card_Name"
@@ -215,7 +238,7 @@ export default function Payment() {
                               className="mb-1 block text-sm font-medium"
                               htmlFor="card-email"
                             >
-                              Email <span className="text-red-500">*</span>
+                              Email
                             </label>
                             <input
                               {...register("mail")}
@@ -226,7 +249,7 @@ export default function Payment() {
                             />
                           </div>
                         </div>
-                        {/* Form footer */}
+
                         <div className="mt-6">
                           <div className="mb-4">
                             <button
@@ -242,14 +265,10 @@ export default function Payment() {
                         </div>
                       </form>
                     </div>
-
-                    {/* PayPal form */}
                   </div>
                 </div>
               </div>
             </section>
-
-            {/* More components */}
           </div>
         </div>
       </>

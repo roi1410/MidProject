@@ -10,7 +10,7 @@ export const Registercontext = createContext({
   degreeOption: [],
   SetdegreeOption: () => {},
 });
-export const SingUp_degreeContext = createContext({ CerentUser: {} });
+export const SingUp_degreeContext = createContext({ CerentUser: {} ,DegreeDate:[]});
 export const DegreeSingUpContext = createContext({ CerentUser: {} });
 
 const MainContext = ({ children }) => {
@@ -19,7 +19,12 @@ const MainContext = ({ children }) => {
   const GlaryData = jsonData.Glary;
   const degreesData = jsonData.degree;
   const GraduateData = jsonData.Graduate;
-  const [degreeOption, SetdegreeOption] = useState(Object.keys(degreesData));
+  const DegreeDate=jsonData.date_degree
+
+
+  const [degreeOption, SetdegreeOption] = useState(Object.keys(DegreeDate));
+
+
   const [CerentUser, SetCerentUser] = useState();
 
   const [sideBarArray, SetsideBarArray] = useState(
@@ -27,7 +32,7 @@ const MainContext = ({ children }) => {
       ? JSON.parse(localStorage.getItem("SideBar"))
       : []
   );
-  console.log(sideBarArray);
+ 
  
   useEffect(() => {
     SidebarForm && SetsideBarArray([...sideBarArray, SidebarForm]);
@@ -57,7 +62,7 @@ const MainContext = ({ children }) => {
   return (
     <GraduateContext.Provider value={{GraduateData}}>
     <DegreeSingUpContext.Provider value={{CerentUser}}>
-      <SingUp_degreeContext.Provider value={{ CerentUser }}>
+      <SingUp_degreeContext.Provider value={{ CerentUser,DegreeDate }}>
         <Registercontext.Provider value={{ degreeOption, SetdegreeOption }}>
           <LogIncontexst.Provider value={{ Login, SetLogin }}>
             <Glarycontext.Provider value={{ GlaryData }}>

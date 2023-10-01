@@ -1,65 +1,96 @@
+import React from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import { useContext } from "react";
 import { DegreeSingUpContext } from "../Context";
-import { useState, useEffect } from "react";
 
-function MyCalendar({ Users_Degree }) {
-  const [DegreeObj, setDegreeObj] = useState([]);
-  const DateAray = [
-    {
-      start: moment("2023-10-24T10:00:00").toDate(),
-      end: moment("2023-12-01T10:00:00").toDate(),
-    },
-    {
-      start: moment("2023-12-01T12:00:00").toDate(),
-      end: moment("2024-01-01T10:00:00").toDate(),
-    },
-    {
-      start: moment("2024-01-01T15:00:00").toDate(),
-      end: moment("2024-03-01T10:00:00").toDate(),
-    },
-    {
-      start: moment("2024-03-01T15:00:00").toDate(),
-      end: moment("2024-04-01T10:00:00").toDate(),
-    },
-    {
-      start: moment("2024-04-01T15:00:00").toDate(),
-      end: moment("2024-07-01T10:00:00").toDate(),
-    },
-    
-  ];
-
+const MyCalendar = ({ Users_Degree, DegreeDate }) => {
   const localizer = momentLocalizer(moment);
-  Users_Degree?.map((element, index) => {
+
+  
+  const formatEvents = () => {
+    const formattedEvents = Users_Degree.map((degree) => {
+      const eventData = DegreeDate[degree];
+      return {
+        title: degree,
+        start: new Date(eventData?.start), 
+        end: new Date(eventData?.end),     
+        color: eventData?.color,           
+      };
+    });
+    return formattedEvents;
+  };
+  const degree_info=formatEvents()
+  console.log(degree_info);
+ 
+
   
 
 
-    let event = {
-      start: DateAray[index].start,
-      end: DateAray[index].end,
-      title: element,
+  
+  const eventStyleGetter = (event) => {
+    const style = {
+      backgroundColor: event.color || 'blue', 
+      borderRadius: "0px",
+      opacity: 0.8,
+      color: "white",
+      border: "0px",
+      display: "block",
+      textAlign: "center",
     };
 
-    useEffect(() => {
-      setDegreeObj((prev) => [...prev, event]);
-    }, [event.title]);
-},[]);
-console.log(DegreeObj);
+    return {
+      style: style,
+    };
+  };
 
   return (
-    <div>
+    
+    <div className="border-8 border-sky-500">
+      <div>
+
+      {degree_info.map((degree)=>{
+        return(
+          <div className="  border-8 border-sky-500 grid gap-2">
+        
+        
+        <span className="font-sans font-bold">{degree?.title + " "}</span>
+        <span> start in: {moment(degree.start).format("MMMM D, YYYY h:mm a")}</span>
+        <span> end in :{moment(degree.end).format("MMMM D, YYYY h:mm a")}</span>
+        
+        
+        </div>
+        )
+      })}
+
+      </div>
+      
+     
       <Calendar
-        events={DegreeObj}
+        events={degree_info}
         localizer={localizer}
-        style={{ height: 500, backgroundColor: "white" }}
+        style={{ height: 700, backgroundColor: "white" }}
         startAccessor="start"
         endAccessor="end"
+        components={{
+    
+          event: CustomEvent,
+        }}
+        eventPropGetter={eventStyleGetter} 
       />
-     
     </div>
   );
-}
+};
+
+
+const CustomEvent = ({ event }) => {
+  return (
+    <div>
+      <strong>{event.title}</strong>
+      <br />
+      <span>{moment(event.start).format("MMMM D, YYYY h:mm a")} - {moment(event.end).format("h:mm a")}</span>
+    </div>
+  );
+};
 
 export default MyCalendar;

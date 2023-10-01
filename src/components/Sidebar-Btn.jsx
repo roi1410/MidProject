@@ -5,7 +5,7 @@ const Sidebar_Btn = ({ handleselect_degree, keyshit, e }) => {
     const [color, setcolor] = useState(false)
    
 
-  const sting = `rounded-3xl ${color ? 'bg-blue-500' : 'bg-red-500'} text-xs`
+  const sting = `rounded-3xl ${color ? 'bg-blue-500 text-white' : 'bg-gray-500'} text-xs`
 
   return (
     <button

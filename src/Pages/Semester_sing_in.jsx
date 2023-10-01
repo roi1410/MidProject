@@ -5,7 +5,9 @@ import { Calendar } from "lucide-react";
 import MyCalendar from "../components/MyCalendar";
 
 export const Semester_sing_in = () => {
-  const { CerentUser } = useContext(SingUp_degreeContext);
+  const { CerentUser ,DegreeDate} = useContext(SingUp_degreeContext);
+
+ 
   const nav = useNavigate();
   if (!CerentUser) {
     return (
@@ -32,8 +34,8 @@ export const Semester_sing_in = () => {
               payment
             </NavLink>
           </div>
-          when the sumester of the dgree takes palce 
-          <MyCalendar Users_Degree={Users_Degree} />
+          
+          <MyCalendar Users_Degree={Users_Degree} DegreeDate={DegreeDate} />
         </div>
       </>
     );
