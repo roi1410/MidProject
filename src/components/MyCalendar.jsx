@@ -49,9 +49,9 @@ const MyCalendar = ({ Users_Degree, DegreeDate }) => {
     <div className="border-8 border-sky-500">
       <div>
 
-      {degree_info.map((degree)=>{
+      {degree_info.map((degree,index)=>{
         return(
-          <div className="  border-8 border-sky-500 grid gap-2">
+          <div key={index}  className="  border-8 border-sky-500 grid gap-2">
         
         
         <span className="font-sans font-bold">{degree?.title + " "}</span>
