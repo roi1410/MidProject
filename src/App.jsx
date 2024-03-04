@@ -1,13 +1,10 @@
-import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import "./css/App.css";
-import { useContext } from "react";
-import Layout from "./components/layout";
+import Layout from "./components/Layout";
 import Home from "./Pages/Home";
 import { Register } from "./Pages/Register";
 import { Semester_sing_in } from "./Pages/Semester_sing_in";
-import Sidebar from "./components/Sidebar";
 import  LogIn  from "./Pages/LogIn";
 import DegreePage from "./Pages/DegreePage";
 import Payment from "./Pages/Payment";
