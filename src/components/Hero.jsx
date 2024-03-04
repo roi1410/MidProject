@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Video from "../assets/Video.mp4";
+import Video from "../assets/video.mp4";
 import { motion } from "framer-motion";
 
 const Hero = () => {
