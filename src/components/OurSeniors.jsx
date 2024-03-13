@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { DegreesContext } from "../Context";
-import Senior from "../components/senior";
+import Senior from "../components/Senior";
 
 export const OurSeniors = ({ profession }) => {
   const { degreesData } = useContext(DegreesContext);
